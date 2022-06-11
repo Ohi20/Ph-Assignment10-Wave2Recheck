@@ -5,6 +5,7 @@ import Blogs from './Pages/Blogs/Blogs';
 import Header from './Pages/Header/Header';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
+import NotFound from './Pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/login" element={<Login/>} />
         <Route path="/blogs" element={<Blogs/>} />
         <Route path="/aboutme" element={<Aboutme/>} />
+        <Route path="*" element={<NotFound/>} />
 
       </Routes>
 
