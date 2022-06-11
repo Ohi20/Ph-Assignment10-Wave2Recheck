@@ -22,6 +22,7 @@ const Header = () => {
        <Link class="nav-item nav-link menu-ul rounded mx-2 text-white font-weight-bold" to="/services">Services</Link>
        <Link class="nav-item nav-link menu-ul rounded mx-2 text-white font-weight-bold" to="/checkout">Checkout </Link>
        <Link class="nav-item nav-link menu-ul rounded mx-2 text-white font-weight-bold" to="/blogs">Blogs</Link>  
+       <Link class="nav-item nav-link menu-ul rounded mx-2 text-white font-weight-bold" to="/aboutme">AboutMe</Link> 
        <Link class="nav-item nav-link menu-ul rounded mx-2 text-white font-weight-bold" to="/login">Login</Link> 
        <Link class="nav-item nav-link" to="*"></Link>
     </div>
