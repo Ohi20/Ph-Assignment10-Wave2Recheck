@@ -9,10 +9,13 @@ const Header = () => {
             
             <div className='d-flex justify-content-center'>
             <nav class="navbar navbar-expand-lg navbar-light ">
-  
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  {/* navbarNavAltMarkup navbarNavAltMarkup*/}
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+
+  
+
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
        <Link class="nav-item nav-link btn-primary rounded mx-2 text-white font-weight-bold" to="/">Home</Link>
