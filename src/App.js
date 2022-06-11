@@ -6,6 +6,7 @@ import Header from './Pages/Header/Header';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import NotFound from './Pages/NotFound/NotFound';
+import Services from './Pages/Services/Services';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login/>} />
         <Route path="/blogs" element={<Blogs/>} />
+        <Route path="/services" element={<Services/>} />
         <Route path="/aboutme" element={<Aboutme/>} />
         <Route path="*" element={<NotFound/>} />
 
