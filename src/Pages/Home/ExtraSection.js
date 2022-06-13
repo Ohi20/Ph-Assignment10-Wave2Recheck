@@ -5,7 +5,8 @@ import '../Home/ExtraSection.css';
 const ExtraSection = () => {
     return (
         <div className='my-5'>
-        <h2 className='text-center mb-3'>Extra section</h2>
+        <h2 className='text-center'>Good To See You</h2>
+        <h2 className='text-center mb-3'>Have a coffee</h2>
         <div>
         <Card className="text-center d-flex justify-content-center align-items-center">
         <div>

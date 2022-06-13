@@ -5,7 +5,7 @@ import '../Header/Header.css';
 const Header = () => {
     return (
         <div >
-            <h2 className=' text-center my-3 header-title'>KimberlyLaw</h2>
+            <h2 className=' text-center my-3 header-title'>KimberLaw</h2>
             
             <div className='d-flex justify-content-center'>
             <nav class="navbar navbar-expand-lg navbar-light ">

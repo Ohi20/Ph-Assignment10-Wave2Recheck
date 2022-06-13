@@ -4,9 +4,8 @@ import auth from '../../firebase.init';
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Loading from '../../Shared/Loading';
-import Testlogin from './Testlogin';
 
-const Login = () => {
+const Testlogin = () => {
 
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
 
@@ -37,12 +36,13 @@ const Login = () => {
     }
 
 
+
     return (
         <div className='d-flex h-screen justify-conten-center align-items-center '>
         <div class="card lg:card-side text-white bg-neutral shadow-xl">
 
 <div class="card-body">
-<h2 class="card-title text-center text-2xl font-bold">Login</h2>
+<h2 class="card-title text-center text-primary">TestLogin</h2>
 <form onSubmit={handleSubmit(onSubmit)}>
 
 <div class="form-control w-full max-w-xs">
@@ -110,12 +110,8 @@ class="input input-bordered w-full max-w-xs"
 className='btn-primary'>Continue with Google</button>
 </div>
 </div>
-
-<div>
-    <Testlogin></Testlogin>
-</div>
     </div>
     );
 };
 
-export default Login;
+export default Testlogin;
