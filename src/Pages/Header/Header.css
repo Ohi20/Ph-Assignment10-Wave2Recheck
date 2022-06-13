@@ -4,9 +4,13 @@
 
 .menu-ul{
     background-color: #03396D;
+    padding: 4px 8px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
 }
 
-.menu-ul2{
-    
-    
-}
+
+

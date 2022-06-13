@@ -29,11 +29,11 @@ const Header = () => {
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-       <Link class="nav-item nav-link menu-ul rounded mx-2 text-white font-weight-bold" to="/">Home</Link>
-       <Link class="nav-item nav-link menu-ul rounded mx-2 text-white font-weight-bold" to="/services">Services</Link>
-       <Link class="nav-item nav-link menu-ul rounded mx-2 text-white font-weight-bold" to="/checkout">Checkout </Link>
-       <Link class="nav-item nav-link menu-ul rounded mx-2 text-white font-weight-bold" to="/blogs">Blogs</Link>  
-       <Link class="nav-item nav-link menu-ul rounded mx-2 text-white font-weight-bold" to="/aboutme">AboutMe</Link> 
+       <Link class="nav-item  menu-ul rounded mx-2 text-white font-weight-bold" to="/">Home</Link>
+       <Link class="nav-item  menu-ul rounded mx-2 text-white font-weight-bold" to="/services">Services</Link>
+       <Link class="nav-item  menu-ul rounded mx-2 text-white font-weight-bold" to="/checkout">Checkout </Link>
+       <Link class="nav-item  menu-ul rounded mx-2 text-white font-weight-bold" to="/blogs">Blogs</Link>  
+       <Link class="nav-item  menu-ul rounded mx-2 text-white font-weight-bold" to="/aboutme">AboutMe</Link> 
        
        <span >{user ?  <button className='btn btn-danger' onClick={logout} >Sign Out</button> : <Link class="nav-item nav-link menu-ul rounded mx-2 text-white font-weight-bold" to="/login">Login</Link>}</span> 
        <Link class="nav-item nav-link" to="*"></Link>
