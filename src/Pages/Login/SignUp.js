@@ -1,9 +1,9 @@
 import React from 'react';
 import Footer from '../../Shared/Footer';
-import { useSignInWithEmailAndPassword,useSignInWithGoogle } from "react-firebase-hooks/auth";
+import { useCreateUserWithEmailAndPassword,useSignInWithGoogle, useUpdateProfile } from "react-firebase-hooks/auth";
 import auth from '../../firebase.init';
 import { useForm } from "react-hook-form";
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Loading from '../../Shared/Loading';
 
 const SignUp = () => {
@@ -12,30 +12,33 @@ const SignUp = () => {
 
     const { register, formState: { errors }, handleSubmit } = useForm();
 
-    const [SignInWithEmailAndPassword, user, loading, error] = useSignInWithEmailAndPassword(auth);
+    const [createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth);
+
+    const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+
+    const navigate = useNavigate();
 
     let signInError;
-    const navigate = useNavigate();
-    const location = useLocation();
-    let from = location.state?.from?.pathname || "/";
 
-    if(loading || gLoading){
+    if(loading || gLoading || updating){
         return <Loading></Loading>
     }
 
-    if(error || gError){
-        signInError = <p className='text-red-500'><small>{error?.message || gError?.message}</small></p>
+    if(error || gError || updateError){
+        signInError = <p className='text-red-500'><small>{error?.message || gError?.message || updateError?.message}</small></p>
     }
 
     if(user || gUser){
-        navigate(from, {replace: true});
+        console.log(user || gUser);
     }
 
-    const onSubmit = data => {
+    const onSubmit = async data => {
         console.log(data);
-        SignInWithEmailAndPassword(data.email,data.password);
+        await createUserWithEmailAndPassword(data.email,data.password);
+        await updateProfile({displayName: data.name});
+        console.log('updated');
+        navigate('/purchase');
     }
-
 
 
     return (
@@ -78,6 +81,39 @@ message: 'Please Give a Valid Email' // JS only: <p>error message</p> TS only su
 
 
 </div>
+<div class="form-group d-flex flex-column justify-content-center align-items-center mb-2">
+<div>
+<label className='' for="exampleInputEmail1">Name</label>
+</div>
+<div>
+<input 
+type="text" 
+placeholder="Your Name" 
+className="input text-center" 
+{...register("name", {
+required: {
+value: true,
+massage: 'name required'
+},
+pattern: {
+value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
+message: 'Please Give a Valid Name' // JS only: <p>error message</p> TS only support string
+}
+})}
+/>
+</div>
+
+<label class="label">
+{errors.name?.type === 'required' &&  <span class="label-text-alt text-red-500">{errors.name.message}</span>}
+
+
+
+</label>
+
+
+</div>
+
+
 <div class="form-group d-flex flex-column justify-content-center align-items-center mb-2">
 <div>
 <label className='' for="exampleInputPassword1">Password</label>

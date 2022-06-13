@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import Footer from '../../Shared/Footer';
 
 const Blogs = () => {
     return (
@@ -60,7 +61,8 @@ const Blogs = () => {
 </Card>
             </div>
 
-           
+           <Footer></Footer>
+
         </div>
     );
 };
