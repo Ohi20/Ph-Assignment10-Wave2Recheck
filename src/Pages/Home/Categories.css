@@ -2,14 +2,18 @@
     color: #446382;
 }
 
-.card1{
-    box-shadow: 20px darkgray;
+.card-textman{
+    color: #EC8282;
 }
 
-.services-sec{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 20px;
+.card-headerman{
+    color: #826F8D;
 }
+
+.card-price{
+    color: #C37B87;
+}
+
+
 
 
