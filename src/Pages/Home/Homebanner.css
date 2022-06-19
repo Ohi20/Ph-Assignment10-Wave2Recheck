@@ -1,4 +1,21 @@
 .banner-title{
-    color: #035C96;
+    color: #C37B87;
+    font-size: 20px;
 }
 
+.banner-btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.banner-button{
+    background-color: #826F8D;
+    color: white;
+    padding: 4px 8px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: none;
+    font-size: 14px;
+}

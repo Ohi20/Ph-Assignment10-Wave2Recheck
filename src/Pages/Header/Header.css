@@ -1,15 +1,20 @@
 .header-title {
- color: #03204C;   
+    /* color: #03204C;    */
+    color: #446382;
 }
 
 .menu-ul{
-    background-color: #03396D;
+    background-color: #826F8D;
     padding: 4px 8px;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 14px;
+}
+
+.menu-ul:hover{
+    color: #446382;
 }
 
 

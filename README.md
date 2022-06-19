@@ -9,13 +9,26 @@ Here is my Project Link [Click Here](https://github.com/facebook/create-react-ap
 
 Available Components in this project:
 <ul>
-<li>Navbar Menu</li>,Home, Checkout, Blogs, Login,Signup,
+<li>Navbar Menu</li>
+<li>Home</li>
+<li>Checkout</li>
+<li>Blogs</li>
+<li>Login</li>
+<li>Signup</li>
 <li>Footer</li>
 </ul>
 
 Technology Used in this project:
 <ul>
-Html5 ,CSS3, Javascript, Bootstrap, React, React-Router, Firebase , React-firebase-hooks, React-hook-form.
+ <li>Html5</li>
+<li>CSS3</li>
+<li>Javascript</li>
+<li>Bootstrap</li>
+<li>React</li>
+<li>React-Router</li>
+<li>Firebase</li>
+<li>React-firebase-hooks</li>
+<li>React-hook-form</li>
 </ul>
 
 

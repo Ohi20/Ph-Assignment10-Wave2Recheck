@@ -1,6 +1,5 @@
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-
 import { Link } from 'react-router-dom';
 import '../Header/Header.css';
 import { signOut } from 'firebase/auth';
@@ -16,7 +15,9 @@ const Header = () => {
 
     return (
         <div >
-            <h2 className=' text-center my-3 header-title'>KimberLaw</h2>
+            <div className='text-center my-3'>
+            <h2 className='header-title'>KimberLaw</h2>
+            </div>
             
             <div className='d-flex justify-content-center'>
             <nav class="navbar navbar-expand-lg navbar-light ">
