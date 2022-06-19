@@ -1,7 +1,11 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const Categories = () => {
+
+    let navigate = useNavigate();
+        
     return (
         <div className='my-5'>
             <div>
@@ -10,7 +14,10 @@ const Categories = () => {
             <div className='services-sec d-grid col-sm-1'>
             <div>
             <Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" className='img-fluid' src="https://www.smudailycampus.com/wp-content/uploads/2020/01/63393.jpg" />
+  {/* <Card.Img variant="top" className='img-fluid' src="https://www.smudailycampus.com/wp-content/uploads/2020/01/63393.jpg" /> */}
+        <div>
+            <img height="300px" width="300px" className='img-fluid' src='https://www.smudailycampus.com/wp-content/uploads/2020/01/63393.jpg' alt=''></img>
+        </div>
   <Card.Body>
     <Card.Title>Personal Injury</Card.Title>
     <Card.Text>
@@ -20,14 +27,17 @@ const Categories = () => {
     
     </Card.Body>
     <div>
-    <Button>Get started</Button>
+    <Button onClick={() => navigate('/checkout')}>Get started</Button>
     </div>
 </Card>
             </div>
 
             <div>
             <Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" className='img-fluid' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP6px7frCg9sngtnOybVm15cNL-a4YOws3qdLsQOlKsvjkNFehKsGndBrPMvmoUKIDhGs&usqp=CAU" />
+  {/* <Card.Img variant="top" className='img-fluid' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP6px7frCg9sngtnOybVm15cNL-a4YOws3qdLsQOlKsvjkNFehKsGndBrPMvmoUKIDhGs&usqp=CAU" /> */}
+  <div>
+            <img height="300px" width="300px" className='img-fluid' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP6px7frCg9sngtnOybVm15cNL-a4YOws3qdLsQOlKsvjkNFehKsGndBrPMvmoUKIDhGs&usqp=CAU' alt=''></img>
+        </div>
   <Card.Body>
     <Card.Title>Defective Roadway</Card.Title>
     <Card.Text>
@@ -37,7 +47,7 @@ const Categories = () => {
    
     </Card.Body>
     <div>
-    <Button>Get started</Button>
+    <Button onClick={() => navigate('/checkout')}>Get started</Button>
     </div>
 </Card>
             </div>
@@ -52,7 +62,7 @@ const Categories = () => {
     </Card.Text>
     <p>Price:$200 </p>
     <div>
-    <Button>Get started</Button>
+    <Button onClick={() => navigate('/checkout')}>Get started</Button>
     </div>
     </Card.Body>
 </Card>

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Button, Card, ListGroup, ListGroupItem } from 'react-bootstrap';
-import '../../Pages/Services/Services.css';
+import { Button, Card } from 'react-bootstrap';
+import '../Services/Services.css';
 
-const Services = () => {
+const Checkout = () => {
     return (
         <div className='services-sec my-5'>
             <div>
@@ -49,7 +49,10 @@ const Services = () => {
 
                  <div>
             <Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" className='img-fluid w-100' src="https://valientemott.com/wp-content/uploads/2019/12/Crazy-Car-Accident.jpg" />
+  {/* <Card.Img variant="top" className='img-fluid w-100' src="https://valientemott.com/wp-content/uploads/2019/12/Crazy-Car-Accident.jpg" /> */}
+  <div>
+  <img src="https://valientemott.com/wp-content/uploads/2019/12/Crazy-Car-Accident.jpg" class="img-fluid rounded-start" alt="..."/>
+        </div>
   <Card.Body>
     <Card.Title>Vehicle Accidents</Card.Title>
     <Card.Text>
@@ -62,7 +65,10 @@ const Services = () => {
             </div>
             <div>
             <Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" height={'100px'} width={'100px'} className='img-fluid' src="https://media.istockphoto.com/photos/bankruptcy-document-with-wooden-gavel-picture-id915254108?k=20&m=915254108&s=612x612&w=0&h=VueEe_cqv8OFdfJZMGlYdyBqz3BarQQ4yH1AFb1-IA4=" />
+  {/* <Card.Img variant="top" height={'100px'} width={'100px'} className='img-fluid' src="https://media.istockphoto.com/photos/bankruptcy-document-with-wooden-gavel-picture-id915254108?k=20&m=915254108&s=612x612&w=0&h=VueEe_cqv8OFdfJZMGlYdyBqz3BarQQ4yH1AFb1-IA4=" /> */}
+  <div>
+            <img height="300px" width="300px" className='img-fluid' src='https://media.istockphoto.com/photos/bankruptcy-document-with-wooden-gavel-picture-id915254108?k=20&m=915254108&s=612x612&w=0&h=VueEe_cqv8OFdfJZMGlYdyBqz3BarQQ4yH1AFb1-IA4=' alt=''></img>
+        </div>
   <Card.Body>
     <Card.Title>Bankruptcy</Card.Title>
     <Card.Text>
@@ -76,7 +82,10 @@ const Services = () => {
 
             <div>
             <Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" className='img-fluid' src="https://mumbaimirror.indiatimes.com/photo/77057592.cms" />
+  {/* <Card.Img variant="top" className='img-fluid' src="https://mumbaimirror.indiatimes.com/photo/77057592.cms" /> */}
+  <div>
+            <img height="300px" width="300px" className='img-fluid' src='https://mumbaimirror.indiatimes.com/photo/77057592.cms' alt=''></img>
+        </div>
   <Card.Body>
     <Card.Title>Consumer Protection</Card.Title>
     <Card.Text>
@@ -93,4 +102,4 @@ const Services = () => {
     );
 };
 
-export default Services;
+export default Checkout;

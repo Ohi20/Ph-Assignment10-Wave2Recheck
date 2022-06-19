@@ -8,12 +8,14 @@ Project Title:
 Here is my Project Link [Click Here](https://github.com/facebook/create-react-app).
 
 Available Components in this project:
+<ul>
 1.Navbar Menu
 2.Home
 3.Services
 4.Blogs
 5.Login and Signup
 6.Footer
+</ul>
 
 
 

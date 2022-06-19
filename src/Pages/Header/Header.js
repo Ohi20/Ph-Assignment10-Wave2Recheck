@@ -30,7 +30,7 @@ const Header = () => {
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
        <Link class="nav-item  menu-ul rounded mx-2 text-white font-weight-bold" to="/">Home</Link>
-       <Link class="nav-item  menu-ul rounded mx-2 text-white font-weight-bold" to="/services">Services</Link>
+       {/* <Link class="nav-item  menu-ul rounded mx-2 text-white font-weight-bold" to="/services">Services</Link> */}
        <Link class="nav-item  menu-ul rounded mx-2 text-white font-weight-bold" to="/checkout">Checkout </Link>
        <Link class="nav-item  menu-ul rounded mx-2 text-white font-weight-bold" to="/blogs">Blogs</Link>  
        <Link class="nav-item  menu-ul rounded mx-2 text-white font-weight-bold" to="/aboutme">AboutMe</Link> 

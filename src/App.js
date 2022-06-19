@@ -8,7 +8,8 @@ import Login from './Pages/Login/Login';
 import Requireauth from './Pages/Login/Requireauth';
 import SignUp from './Pages/Login/SignUp';
 import NotFound from './Pages/NotFound/NotFound';
-import Services from './Pages/Services/Services';
+import Checkout from './Pages/Services/Checkout';
+
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <Route path="/login" element={<Login/>} />
         <Route path="/signup" element={<SignUp/>} />
         <Route path="/blogs" element={<Blogs/>} />
-        <Route path="/services" element={<Requireauth><Services/></Requireauth>} />
+        <Route path="/checkout" element={<Requireauth><Checkout/></Requireauth>} />
         <Route path="/aboutme" element={<Aboutme/>} />
         <Route path="*" element={<NotFound/>} />
 
