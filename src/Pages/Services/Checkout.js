@@ -1,9 +1,25 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import Footer from '../../Shared/Footer';
 import '../Services/Services.css';
 
+
 const Checkout = () => {
+
+    const submit = () =>{
+        <div className="alert alert-success" role="alert">
+            A simple success alert—check it out!
+        </div>
+    }
+
+    const noload = (event) => {
+        event.preventDefault();
+    }
+
     return (
+        <div>
+
         <div className='services-sec my-5'>
             <div>
             <Card style={{ width: '18rem' }}>
@@ -97,7 +113,40 @@ const Checkout = () => {
 </Card>
             </div>
             
-            
+    </div>
+
+
+     <div className='my-3'>
+
+     <div class="wrapper fadeInDown pt-3">
+<div id="formContent">
+ 
+  <div class="fadeIn first pt-4">
+  <button type="button" class="btn btn-primary position-relative">
+  Who is There?
+  <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+    <span class="visually-hidden">Nice</span>
+  </span>
+</button>
+  </div>
+
+  
+  <form onSubmit={noload}>
+    <input type="text" id="login" class="fadeIn second my-2" name="login" placeholder="Your Name"/>
+    <input type="text" id="password" class="fadeIn third my-2" name="login" placeholder="Phone Number"/>
+    <input onClick={submit} type="submit" class="fadeIn fourth" value="Submit"/>
+  </form>
+
+  
+  <div id="formFooter">
+    <Link className="underlineHover" to="/login">Login</Link>  
+  </div>
+
+</div>
+</div>
+        </div>
+
+        <Footer></Footer>
         </div>
     );
 };
