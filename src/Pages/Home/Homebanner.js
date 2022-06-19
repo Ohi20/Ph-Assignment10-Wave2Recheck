@@ -9,7 +9,8 @@ const Homebanner = () => {
 
     return (
         <div>
-                     <Card className="text-center border-white text-white">
+
+    <Card className="text-center border-white text-white">
   <Card.Header className='text-uppercase banner-title bg-white'>John Leader</Card.Header>
   <Card.Body>
     <Card.Title className='banner-title'>THE RIGHT LAWYER</Card.Title>
@@ -21,7 +22,8 @@ const Homebanner = () => {
     </div>
   </Card.Body>
   </Card>
-        </div>
+
+      </div>
     );
 };
 
