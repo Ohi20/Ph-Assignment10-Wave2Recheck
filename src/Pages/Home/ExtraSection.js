@@ -10,9 +10,9 @@ const ExtraSection = () => {
         <h2 className='extra-title mb-3'>Have a coffee</h2>
         </div>
 
-        <div className='text-center'>
+        <div className='d-flex justify-content-center align-items-center'>
         <Card>
-        <div>
+        
             <div class="container">
                 <div class="coffee-header">
                     <div class="coffee-header__buttons coffee-header__button-one"></div>
@@ -32,7 +32,7 @@ const ExtraSection = () => {
                 </div>
                 <div class="coffee-footer"></div>
                 </div>
-            </div>
+            
 </Card>
         </div>
     </div>

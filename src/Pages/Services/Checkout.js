@@ -134,7 +134,9 @@ const Checkout = () => {
   <form onSubmit={noload}>
     <input type="text" id="login" class="fadeIn second my-2" name="login" placeholder="Your Name"/>
     <input type="text" id="password" class="fadeIn third my-2" name="login" placeholder="Phone Number"/>
+    <div className=' d-flex justify-content-center align-items-center'>
     <input onClick={submit} type="submit" class="fadeIn fourth" value="Submit"/>
+    </div>
   </form>
 
   
