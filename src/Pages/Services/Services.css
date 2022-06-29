@@ -4,6 +4,23 @@
     grid-gap: 20px;
 }
 
+.banner-button{
+  background-color: #826F8D;
+  color: white;
+  padding: 4px 8px;
+  text-decoration: none;
+  border-radius: 15px;
+  border: none;
+  font-size: 14px;
+}
+
+.card-textman{
+  color: #453A4C;
+}
+
+.card-price{
+  color: #84738D;
+}
 
 
 /* Login form */
