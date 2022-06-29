@@ -28,7 +28,9 @@ const Categories = () => {
       </div>
     </div>
     <div class="card-footer">
-    <Button onClick={() => navigate('/checkout')}>Get started</Button>
+    <div className='banner-btn-div'>
+    <button onClick={() => navigate('/checkout')} className='text-uppercase font-bold banner-button' variant="primary">Proceed</button>
+    </div>
     </div>
   </div>
 
@@ -42,7 +44,9 @@ const Categories = () => {
       </div> 
     </div>
     <div class="card-footer">
-    <Button onClick={() => navigate('/checkout')}>Get started</Button>
+    <div className='banner-btn-div'>
+    <button onClick={() => navigate('/checkout')} className='text-uppercase font-bold banner-button' variant="primary">Proceed</button>
+    </div>
     </div>
   </div>
 
@@ -56,7 +60,9 @@ const Categories = () => {
       </div>
     </div>
     <div class="card-footer">
-    <Button onClick={() => navigate('/checkout')}>Get started</Button>
+    <div className='banner-btn-div'>
+    <button onClick={() => navigate('/checkout')} className='text-uppercase font-bold banner-button' variant="primary">Proceed</button>
+    </div>
     </div>
   </div>
 </div>
