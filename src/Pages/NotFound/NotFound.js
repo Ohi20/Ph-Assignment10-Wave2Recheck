@@ -14,7 +14,7 @@ const NotFound = () => {
     <div className='d-flex justify-content-center align-items-center'>
     <img height="200px" width="300px"
       className="img-fluid"
-      src={error3}
+      src={error1}
       alt="First slide"
     />
     </div>
@@ -36,7 +36,7 @@ const NotFound = () => {
    <div className='d-flex justify-content-center align-items-center'>
    <img height="200px" width="300px"
       className="img-fluid"
-      src={error1}
+      src={error3}
       alt="Third slide"
     />
    </div>

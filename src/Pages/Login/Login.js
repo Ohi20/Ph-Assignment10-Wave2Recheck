@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Loading from '../../Shared/Loading';
 import Footer from '../../Shared/Footer';
+import '../Login/Login.css';
 
 const Login = () => {
 
@@ -42,12 +43,14 @@ const Login = () => {
 
 <div>
 
-<h2 class="card-title text-center text-primary">Login</h2>
+<div className='text-center'>
+<h2 class="title-login">Login</h2>
+</div>
 
 <form onSubmit={handleSubmit(onSubmit)}>
 <div class="form-group d-flex flex-column justify-content-center align-items-center mb-2">
 <div>
-<label className='' for="exampleInputEmail1">Email</label>
+<label className='fs-4' for="exampleInputEmail1">Email</label>
 </div>
 <div>
 <input 
@@ -78,7 +81,7 @@ message: 'Please Give a Valid Email' // JS only: <p>error message</p> TS only su
 </div>
 <div class="form-group d-flex flex-column justify-content-center align-items-center mb-2">
 <div>
-<label className='' for="exampleInputPassword1">Password</label>
+<label className='fs-4' for="exampleInputPassword1">Password</label>
 </div>
 <div>
 <input 
@@ -114,14 +117,14 @@ message: 'Must be 6 characters or longer' // JS only: <p>error message</p> TS on
 
 
 <div className='d-flex justify-content-center'>
-<button type="submit" className="btn btn-primary text-center mb-1">Submit</button>
+<button type="submit" className="banner-button fs-5 text-center mb-1">Submit</button>
 </div>
 </form>
-<p><small>New to KimberLaw? <Link className='text-secondary' to="/signup">Create New Account</Link></small></p>
+<p><small>New to KimberLaw? <Link className='text-secondary fs-5' to="/signup">Create New Account</Link></small></p>
 <div class="dropdown-divider">OR</div>
 <div className='d-flex justify-content-center align-items-center'>
 <button onClick={() => signInWithGoogle()} 
-className='btn-primary'><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+className='banner-button fs-5'><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
 <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
 </svg></span> Continue with Google</button>
 </div>

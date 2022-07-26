@@ -1,0 +1,13 @@
+.title-login{
+    color: #826F8D;
+}
+
+.banner-button{
+  background-color: #826F8D;
+  color: white;
+  padding: 4px 8px;
+  text-decoration: none;
+  border-radius: 15px;
+  border: none;
+  font-size: 14px;
+}

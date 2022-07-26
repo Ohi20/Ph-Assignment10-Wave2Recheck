@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import Footer from '../../Shared/Footer';
+import '../Blogs/Blogs.css';
 
 const Blogs = () => {
     return (
@@ -8,10 +9,10 @@ const Blogs = () => {
 
             <div className='my-5'>
             <Card>
-  <Card.Header>Difference between `authorization` and `authentication`:</Card.Header>
+  <Card.Header className='article-header'>Difference between `authorization` and `authentication`:</Card.Header>
   <Card.Body>
     
-    <Card.Text>
+    <Card.Text className='article-para'>
     In authentication process, the identity of user is checked for creating the access to the system.While in authorization process,user’s authorities are checked for accessing the resources.In authentication process, users are verified.While in authorization process, users or persons are vauldated.	Authentication needs usually user’s login details.While authorization needs user’s privilege or security levels.Authentication checks whether the person is user or not.While authorization determines What permissions do user have.
     </Card.Text>
     
@@ -22,10 +23,10 @@ const Blogs = () => {
 
             <div className='my-5'>
             <Card>
-  <Card.Header>Why are you using `firebase`? What other options do you have to implement authentication?</Card.Header>
+  <Card.Header className='article-header'>Why are you using `firebase`? What other options do you have to implement authentication?</Card.Header>
   <Card.Body>
     
-    <Card.Text>
+    <Card.Text className='article-para'>
     By using Firebase, we can focus our time and attention on developing the great app possible for our businesses. therefor, the operations and internal functions are so sould, and taken care of by the Firebase interface, we can spend effective time developing the high quaulty app that users are gonna use.Some of the features we can develop includes: Cloud Messaging,Authentication,Hosting,Remote Configuration,Test Lab,Crash Reporting,Realtime Database,Storage.
     </Card.Text>
     <Card.Text>
@@ -39,10 +40,10 @@ const Blogs = () => {
 
             <div className='my-5'>
             <Card>
-  <Card.Header>What other services does `firebase` provide other than authentication?</Card.Header>
+  <Card.Header className='article-header'>What other services does `firebase` provide other than authentication?</Card.Header>
   <Card.Body>
     
-    <Card.Text>
+    <Card.Text className='article-para'>
     <ul>
                             Cloud Firestore
                         </ul>

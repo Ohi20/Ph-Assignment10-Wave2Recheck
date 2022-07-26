@@ -14,14 +14,23 @@
   font-size: 14px;
 }
 
+.card-headerman{
+  font-size: 25px;
+  color: #453A4C;
+}
+
 .card-textman{
   color: #453A4C;
+  font-size: 20px;
 }
 
 .card-price{
   color: #84738D;
 }
 
+.logn{
+  color: #826F8D;
+}
 
 /* Login form */
 
@@ -242,6 +251,16 @@ a {
     -webkit-animation-delay: 1s;
     -moz-animation-delay: 1s;
     animation-delay: 1s;
+    
+    
+      background-color: #826F8D;
+      color: white;
+      padding: 4px 8px;
+      text-decoration: none;
+      border-radius: 15px;
+      border: none;
+      font-size: 14px;
+    
   }
   
   /* Simple CSS3 Fade-in Animation */

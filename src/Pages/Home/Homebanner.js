@@ -18,7 +18,7 @@ const Homebanner = () => {
     MAKES ALL THE DIFFERENCE
     </Card.Text>
     <div className='banner-btn-div'>
-    <button onClick={() => navigate('/checkout')} className='text-uppercase font-bold banner-button' variant="primary">Explore</button>
+    <button onClick={() => navigate('/checkout')} className='text-uppercase font-bold banner-button fs-4' variant="primary">Explore</button>
     </div>
   </Card.Body>
   </Card>

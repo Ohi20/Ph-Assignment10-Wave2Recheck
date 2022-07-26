@@ -1,5 +1,4 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
 import '../Home/ExtraSection.css';
 
 const ExtraSection = () => {
@@ -11,7 +10,7 @@ const ExtraSection = () => {
         </div>
 
         <div className='d-flex justify-content-center align-items-center'>
-        <Card>
+        <div>
         
             <div class="container">
                 <div class="coffee-header">
@@ -32,8 +31,8 @@ const ExtraSection = () => {
                 </div>
                 <div class="coffee-footer"></div>
                 </div>
-            
-</Card>
+           </div> 
+
         </div>
     </div>
     );

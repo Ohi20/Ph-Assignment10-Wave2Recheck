@@ -1,13 +1,5 @@
-.banner-title{
-    color: #453A4C;
-    font-size: 25px;
-}
-
-.banner-btn-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.title-login{
+    color: #826F8D;
 }
 
 .banner-button{
@@ -18,4 +10,4 @@
     border-radius: 15px;
     border: none;
     font-size: 14px;
-}
+} 

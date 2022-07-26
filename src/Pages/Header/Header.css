@@ -1,7 +1,7 @@
 .header-title {
     /* color: #03204C;    */
     color: #446382;
-    font-size: 22px;
+    
 }
 
 .menu-ul{
@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .menu-ul:hover{
